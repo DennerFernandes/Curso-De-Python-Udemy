@@ -4,22 +4,15 @@ print('-'*30)
 print('Exercício 1'.center(30))
 print('-'*30)
 
-numero1 =  input('Digite um número: ')
-numero2 =  input('Digite um outro número: ')
+numero =  input('Digite um número: ')
 
-if numero1.isdigit() and numero2.isdigit():
-    numero1 = int(numero1)
-    numero2 = int(numero2)
+
+if numero.isdigit():
+    numero1 = int(numero)
     if numero1 % 2 == 0:
-        print(f'O número {numero1} é par')
+        print(f'O número {numero} é par')
     else:
-        print(f'O número {numero1} é ímpar')
-
-
-    if numero2 % 2 == 0:
-        print(f'O número {numero2} é par')
-    else:
-        print(f'O número {numero2} é ímpar')
+        print(f'O número {numero} é ímpar')
 else:
     print('Por favor, repita o programa e digite números inteiros válidos')
 
