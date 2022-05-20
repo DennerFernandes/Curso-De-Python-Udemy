@@ -22,16 +22,19 @@ print('-'*30)
 print('Exercício 2'.center(30))
 print('-'*30)
 
-horario = input('Qual o horário atual? ')
+horario = input('Qual o horário atual? (0-23) ')
 
 if horario.isdigit():
     horario = int(horario)
-    if horario <= 11:
-        print('Bom dia!')
-    elif 17 >= horario >= 12:
-        print('Boa tarde!')
-    elif horario >= 18:
-        print('Boa noite!')
+    if horario < 0 or horario > 23:
+        print('Por favor informe um horário entre 0 e 23')
+    else:
+        if horario <= 11:
+            print('Bom dia!')
+        elif 17 >= horario >= 12:
+            print('Boa tarde!')
+        elif horario >= 18:
+            print('Boa noite!')
 else:
     print('Horário inválido.')
 
