@@ -7,7 +7,6 @@ print('-'*30)
 numero1 =  input('Digite um número: ')
 numero2 =  input('Digite um outro número: ')
 
-
 if numero1.isdigit() and numero2.isdigit():
     numero1 = int(numero1)
     numero2 = int(numero2)
@@ -38,9 +37,8 @@ if horario.isdigit():
         print('Bom dia!')
     elif 17 >= horario >= 12:
         print('Boa tarde!')
-    else:
+    elif horario >= 18:
         print('Boa noite!')
-    
 else:
     print('Horário inválido.')
 
