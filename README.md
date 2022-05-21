@@ -1,6 +1,6 @@
 ### Curso de Python da Udemy
 ##
-- A pasta de aula, contém as anotações das aulas que eu vi, ou seja não contém anotações de todas as aulas
+- Anotações.txt tem todas as anotações que eu fiz
 - Já a pasta de exercícios contém os exercícios que eu fiz
 
 Obrigado 😁
