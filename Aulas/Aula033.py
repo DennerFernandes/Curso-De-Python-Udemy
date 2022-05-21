@@ -10,10 +10,24 @@ Você pode conferir tudo isso em:
   https://docs.python.org/3/libary/stdtypes.html
   https://docs.python.org/3/libary/functions.html
 
-Códigos da aula:
 """
 
-# positivos   [012345678]
-texto       = 'Python s2'
-
+# indices positivos   [012345678]
+texto               = 'Python s2'
+# indices negativos  -[987654321]
 print(texto[2])
+
+##################################
+
+url = 'www.google.com.br/'
+print(url[:-1])
+
+##################################
+
+nova_string = texto[:-1]
+print(nova_string)
+
+############Passos###############
+
+nova_string = texto[0::3]
+print(nova_string)
