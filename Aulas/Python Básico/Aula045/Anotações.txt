@@ -1,0 +1,34 @@
+------------------>>> Operador ternário <<<------------------
+Operador ternário em python funciona assim:
+logged_user = True
+
+mensagem = 'Usuário Logado' if logged_user else 'Usuário precisa logar'
+print(mensagem)
+------------------------------------
+Se não estivesse usando operador ternário, o código ficaria assim:
+
+logged_user = True
+
+if logged_user:
+    mensagem = 'Usuário Logado'
+else:
+    mensagem = 'Usuário precisa logar'
+print(mensagem)
+------------------------------------
+Ou seja, operadores ternários ajudam a diminuir o código.
+Outro exemplo seria:
+
+idade = 18
+if idade >= 18:
+    print('Pode acessar.')
+else:
+    print('Não pode acessar.')
+
+------------------------------------
+ Usando operador ternário ficaria:
+
+idade = 18
+e_de_maior = (idade >= 18)
+msg = 'Pode acessar' if e_de_maior else 'Não pode acessar'
+
+

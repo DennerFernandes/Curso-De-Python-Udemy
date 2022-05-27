@@ -1,0 +1,215 @@
+﻿--------------------------------------------->>>  Aula038 <<<-----------------------------------------------------------
+--------------------------------------------->>>  LISTAS  <<<-----------------------------------------------------------
+Obs: Todos os códigos aqui colocados estão no file Aula038(listas).py
+-------------------------------------------------------------------
+Sumário:
+
+Obs: O número que se encontra depois do traço é a linha em que está cada coisa
+
+Criando uma lista - 24
+Separando os valores dentro da lista - 34
+Alterando indices - 42
+Fatiamento - 57
+Concatenando listas - 69
+Extend - 85
+Append - 106
+Insert - 124
+Pop - 142
+Del - 156
+Max  e Min - 169
+Range e list() - 187
+For com listas - 203
+-------------------------------------------------------------------
+
+>> Criando uma lista <<
+
+Para mostrar ao interpretador do python o que são listas, basta colocar a variavel, seguida de colchetes
+Exemplo:
+
+
+lista = []
+
+-------------------------------------------------------------------
+
+>> Separando os valores dentro da lista <<
+
+Os valores dentro da lista são separados por vírgula (,):
+
+frutas = ['Banana', 'Maçã', 'Melancia']
+
+-------------------------------------------------------------------
+
+>> Alterando indices <<
+
+Para alterar algo que esta em um determinadio indice, pode ser feito assim
+Exemplo:
+
+
+lista = ['A', 'B', 'C', 'D', 'E', 10.5]
+lista[5] = 'Qualquer outra coisa'
+print(lista[5])
+
+Retorna:
+Qualquer outra coisa
+
+-------------------------------------------------------------------
+
+>> Fatiamento <<
+
+lista = ['A', 'B', 'C', 'D', 'E', 10.5]
+print(lista[0:3])
+print(lista[::-1]) [Retorna a lista ao contrário]
+
+Retorna:
+['A', 'B', 'C']
+[10.5, 'E', 'D', 'C', 'B', 'A']
+
+-------------------------------------------------------------------
+
+>> Concatenando listas <<
+
+lista_1 = [1, 2, 3]
+lista_2 = [4, 5, 6]
+lista_3 = lista_1 + lista_2 # Aqui estamos concatenando a lista
+print(lista_1)
+print(lista_2)
+print(lista_3)
+
+Retorna:
+[1, 2, 3]
+[4, 5, 6]
+[1, 2, 3, 4, 5, 6]
+
+-------------------------------------------------------------------
+
+>> Extend <<
+Extend funciona como a concatenação com o sninal de mais (+), mas é diferente
+Exemplo:
+
+lista_1 = [1, 2, 3]
+lista_2 = [4, 5, 6]
+lista_1.extend(lista_2)
+print(lista_1)
+print(lista_2)
+
+Retorna:
+[1, 2, 3, 4, 5, 6]
+[4, 5, 6]
+
+O que aconteceu foi o seguinte:
+A lista_1 recebeu uma extensão que é a lista_2, fazendo a lista_1 ficar com os números até seis ([1, 2, 3, 4, 5, 6])
+e a lista 2 continuando igual pois não a alteramos ([4, 5, 6]), ou seja, a lista_1 adicionou a ela mesma a lista_2 e
+a lista_2 continuou intocada
+
+-------------------------------------------------------------------
+
+>> Append <<
+Append adiciona um item ao final da lista
+Exemplo:
+
+lista_1 = [1, 2, 3]
+lista_2 = [4, 5, 6]
+lista_2.append('b')
+
+print(lista_1)
+print(lista_2)
+
+Retorna:
+
+[1, 2, 3]
+[4, 5, 6, 'b'])
+
+-------------------------------------------------------------------
+
+>> Insert <<
+Insert recebe dois valores: A posição, e o valor;
+A posição adiciona o valor a posição que foi informada, mudando todos os índices da lista;
+E o valor é o valor a ser adicionado na posição informada.
+Exemplo:
+
+lista_1 = [1, 2, 3]
+lista_2 = [4, 5, 6]
+lista_2.insert(0, 'banana') # Aqui inserimos o valor 'banana' na posição 0 da lista
+
+print(lista_2[0])
+
+Retorna:
+
+banana
+
+-------------------------------------------------------------------
+
+>> Pop <<
+O método pop remove o ultimo valor da lista.
+Exemplo:
+
+lista_1 = [1, 2, 3]
+lista_2 = [4, 5, 6]
+print(lista_2)
+lista_2.insert(0, 'banana')
+print(lista_2)
+lista_2.pop()
+print(lista_2)
+
+-------------------------------------------------------------------
+
+>> Del <<
+O método del remove os itens especificados da lista
+Exemplo:
+
+lista_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+del(lista_2[3:5])
+print(lista_2)
+
+Retorna:
+[1, 2, 3, 6, 7, 8, 9]
+
+-------------------------------------------------------------------
+
+>> Max  e Min <<
+
+Obs: Max só funciona com lista feitas inteiramente de números
+A função max mostra o maior valor da lista;
+E a função min mostra o menor valor da lista.
+Exemplo:
+
+lista_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(max(lista_2))
+print(min(lista_2))
+
+Retorna:
+
+9
+1
+
+-------------------------------------------------------------------
+
+>> Range e list() <<
+
+Para usar a função range é nessesário transformalo em uma lista usando a função list()
+Exemplo:
+
+lista_2 = list(range(1, 10))
+print(lista_2)
+
+Retorna:
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Obs: só é possível transformar o range(0,10) em uma lista por ser um objeto iterável
+
+-------------------------------------------------------------------
+
+>> For com listas <<
+
+lista_2 = list(range(1, 100, 8))
+soma = 0
+for valor in lista_2:
+    soma += valor
+print(soma)
+
+Retorna:
+
+637
+
+-------------------------------------------------------------------

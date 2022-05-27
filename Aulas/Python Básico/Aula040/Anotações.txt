@@ -1,0 +1,40 @@
+For / Else
+
+Para usar For / Else, é nessário que o laço se encerre sozinho, sem quebrar o laço.
+Exemplo:
+
+variavel = ['Luiz Otávio', 'joãozinho', 'Maria']
+for valor in variavel:
+    if  valor.lower().startswith('j'): 
+        continue
+    print(valor)
+
+else:
+    print('Não existe uma palavra que começa com J')
+
+Retorna: 
+
+Luiz Otávio
+Maria
+Não existe uma palavra que começa com J
+
+Obs: startswith checa se determinada string começa com a letra (ou palavra sla) informada
+
+---------------------------------------------------------------------------------------------------
+
+Já se tiver um laço que tenha break, o else não é executado.
+Exemplo:
+
+variavel = ['Luiz Otávio', 'joãozinho', 'Maria']
+comeca_com_j = False
+for valor in variavel:
+    if valor.lower().startswith('j'): # startswith checa se determinada string começa com a letra (ou palavra sla) informada
+        comeca_com_j = True
+        print('O else não foi executado')
+        break
+else:
+    print('Não existe uma palavra que começa com J')
+
+Retorna:
+
+O else não foi executado

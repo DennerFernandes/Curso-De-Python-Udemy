@@ -1,0 +1,99 @@
+--------------------------->>> Def em python <<<---------------------------
+Para definir uma função em python, utilizamos a palavra def, que significa definir uma função, ou seja function definition, veja:
+
+def funcao():
+    pass   # esse pass é só para não dar erro
+
+--------------------------->>> Chamando a função <<<---------------------------
+Para chamar uma função em python, basta fazer o seguinte:
+
+def funcao():
+    print('Olá mundo!')
+
+
+funcao()
+funcao()
+funcao()
+funcao()
+
+Retorna:
+
+Olá mundo!
+Olá mundo!
+Olá mundo!
+Olá mundo!
+
+--------------------------->>> Parâmetros <<<---------------------------
+
+Para atribuir um parâmetro a uma função, basta fazer o seguinte:
+
+def saudacao(msg, nome):  # Aqui dentro dos parênteses definimos os parâmetros
+    print(msg, nome)
+
+
+saudacao('Olá', 'Denner!')
+saudacao('Oi', 'Denner!')
+saudacao('Hello', 'Denner!')
+saudacao('Welcome', 'Denner!')
+saudacao('Nice to meet you', 'Denner!')
+saudacao('How are you,', 'Denner?')
+
+Retorna:
+
+Olá Denner!
+Oi Denner!
+Hello Denner!
+Welcome Denner!
+Nice to meet you Denner!
+How are you, Denner?
+
+--------------------------->>> Padronizando variáveis <<<---------------------------
+
+Para padronizar uma variável dentro da função, basta fazer o seguinte:
+
+def saudacao(msg='Olá', nome='Usuário'): # aqui padronizamos a variável "msg" e a variável "nome"
+    print(msg, nome)
+
+
+saudacao()
+saudacao('Olá', 'Denner!')
+saudacao('Oi', 'Denner!')
+saudacao('Hello', 'Denner!')
+saudacao('Welcome', 'Denner!')
+saudacao('Nice to meet you', 'Denner!')
+saudacao('How are you,', 'Denner?')
+
+
+Retorna:
+
+Olá Usuário
+Olá Denner!
+Oi Denner!
+Hello Denner!
+Welcome Denner!
+Nice to meet you Denner!
+How are you, Denner?
+
+--------------------------->>> Qual argumento vai aparecer primeiro <<<---------------------------
+
+def saudacao(msg='Olá', nome='Usuário'):
+    print(msg, nome)
+
+
+saudacao(nome='Zezinho!', msg='Olá,')  # Aqui onde mostramos qual argumento qual vai aparecer primeiro
+saudacao('Olá', 'Denner!')
+saudacao('Oi', 'Denner!')
+saudacao('Hello', 'Denner!')
+saudacao('Welcome', 'Denner!')
+saudacao('Nice to meet you', 'Denner!')
+saudacao('How are you,', 'Denner?')
+
+Retorna:
+
+Olá, Zezinho!
+Olá Denner!
+Oi Denner!
+Hello Denner!
+Welcome Denner!
+Nice to meet you Denner!
+How are you, Denner?

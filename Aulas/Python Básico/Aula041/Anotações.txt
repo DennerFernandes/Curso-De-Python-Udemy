@@ -1,0 +1,41 @@
+------------------>>> Split <<<------------------
+Split divide a string em uma lista de acordo com o que você quer que divida.
+Exemplo:
+
+string = 'O Brasil é um país do futebol, o Brasil é penta.'
+lista = string.split(' ')
+print(lista)
+
+Retorna:
+['O', 'Brasil', 'é', 'um', 'país', 'do', 'futebol,', 'o', 'Brasil', 'é', 'penta.']
+
+------------------>>> Join <<<------------------
+
+Join junta os elementos de uma lista de acordo com o caracter especificado para juntar
+Exemplo:
+
+string = 'O Brasil é penta.'
+lista = string.split(' ')
+string2 = '_'.join(lista)
+print(string2)
+
+Retorna:
+O_Brasil_é_penta.
+
+------------------>>> Enumerate <<<------------------
+
+Enumerate funciona como o len() e como, por exemplo, um laço for in.
+Exemplo:
+
+string = 'O Brasil é penta.'
+lista = string.split(' ')
+
+for indice, valor in enumerate(lista):
+    print(indice, valor, lista[indice])
+
+Retorna:
+
+0 O O
+1 Brasil Brasil
+2 é é
+3 penta. penta.

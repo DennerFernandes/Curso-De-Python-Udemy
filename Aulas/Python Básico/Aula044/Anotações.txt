@@ -1,0 +1,26 @@
+------------------>>> Invertendo valores de duas variáveis <<<------------------
+
+Para inverter os valores de duas variáveis em python é muito simples, veja o exemplo abaixo:
+
+x = 10
+y = 'Luiz'
+x, y = y, x
+print(f'x={x} e y={y}')
+
+Retorna:
+
+x=Luiz e y=10
+
+------------------>>> Invertendo valores de três ou mais variáveis <<<------------------
+
+x = 10
+y = 'Luiz'
+z = 'Otávio'
+x, y, z = z, x, y
+print(f'x={x} e y={y} e z={z}')
+
+Retorna:
+
+x=Otávio e y=10 e z=Luiz
+
+
