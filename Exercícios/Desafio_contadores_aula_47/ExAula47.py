@@ -15,6 +15,3 @@ contador = 0
 while contador < len(progressivo):
     print(f'{progressivo[contador]} {regressivo[contador]}')
     contador += 1
-
-
-# for progressivo, regressivo in enumerate(range(10, 1, -1)):
