@@ -1,0 +1,33 @@
+----------------->>> *args **kwargs (Parte 3) <<<-----------------
+
+Usando *args em uma função, todos os valores que a função recebe são jogados dentro de uma tupla, ou seja a função joga todos os valores recebidos dentro da tupla,
+assim podendo colocar muitos valores no argumento, veja:
+
+def func(*args):
+    print(args)
+
+
+lista = [1,2,3,4,5]
+func(*lista,10,20,40,50) # Aqui mandamos a lista desempacotada apara os indices da tupla que está em *args
+
+Retorna:
+
+(1, 2, 3, 4, 5, 10, 20, 40, 50)
+
+---------------------------------------------------
+**kwargs é um dicionario dentro da função, que permite com que nomeamos as variaveis que desajamos colocar
+em determinada ordem no dicionário, veja:
+
+def func(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+
+lista = [1,2,3,4,5]
+lista2 = [10,20,40,50]
+func(*lista,*lista2, nome='Denner', sobrenome='Fernandes')
+
+Retorna:
+
+(1, 2, 3, 4, 5, 10, 20, 40, 50)
+{'nome': 'Denner', 'sobrenome': 'Fernandes'} # Aqui é onde se encontra as kwargs, que também pode recebrer tantos parametros quanto você quiser

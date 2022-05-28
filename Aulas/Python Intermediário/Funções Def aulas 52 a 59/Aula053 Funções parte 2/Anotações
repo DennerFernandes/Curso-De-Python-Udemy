@@ -1,0 +1,24 @@
+--------------------->>> Return <<<---------------------
+Para retornar um valor em python, utilizamos a palavra "return" que retorna um valor dentro da função, veja:
+
+
+def funcao(var):
+    return var
+
+funcao('Valor que eu quero')
+
+Uma coisa importante em usar a palavra "return" é que sempre que você fizer isso(como no exemplo acima),
+você deve atribuir a função a uma váriavel, ou chamá-la dentro de um print, dessa forma:
+
+def funcao(var):
+    return var
+
+variavel = funcao('Valor que eu quero')
+print(variavel)
+
+Ou dessa forma:
+
+def funcao(var):
+    return var
+
+print(funcao('Valor que eu quero'))

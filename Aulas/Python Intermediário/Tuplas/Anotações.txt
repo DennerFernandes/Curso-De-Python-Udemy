@@ -1,0 +1,14 @@
+------------------>>> Tuplas <<<------------------
+Tuplas são identicas as listas, seriam iguais, se não fosse pela tupla ser imutável
+Se você tentar, por exemplo, adcionar um valor a uma tupla, receberá a seguinte excessão:
+
+t1 = (1,2,3, 'a', 'Denner Fernandes')
+t1.append('b')
+print(t1)
+
+Erro:
+
+Traceback (most recent call last):
+  File "c:/CursoDePythonUdemy/Aulas/Python Intermediário/Tuplas/Aula 61.py", line 2, in <module>
+    t1.append('b')
+AttributeError: 'tuple' object has no attribute 'append'

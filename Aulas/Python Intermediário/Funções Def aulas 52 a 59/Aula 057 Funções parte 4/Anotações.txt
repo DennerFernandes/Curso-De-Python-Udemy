@@ -1,0 +1,53 @@
+------------->> Escopo de variaveis <<<-------------
+
+Quando temos uma variável fora de funções, ela é uma variável, mas quando dizemos a mesma variável dentro da função, essa variável é criada.
+Exemplo:
+
+variavel = 'valor'
+
+def func():
+    print(variavel)
+
+def func2():
+    variavel = 'Outro valor'
+    print(variavel)
+
+func()
+func2()
+
+print(variavel)
+
+Retorna:
+
+valor
+Outro valor
+valor # Vemos que aqui a variável continua tendo o valor "valor", mesmo setando "Outro valor dentro da função"
+
+---------------------------------------
+
+Já se você quiser alterar a variável em si, e não criar outra,é nessesário definir essa variável como global na função.
+Exemplo:
+
+variavel = 'valor'
+
+
+def func():
+    print(variavel)
+
+
+def func2():
+    global variavel # Aqui definimos a variável "variável como global"
+    variavel = 'Outro valor'
+    print(variavel)
+
+func()
+func2()
+
+print(variavel)
+
+Retorna:
+
+
+valor
+Outro valor
+Outro valor
