@@ -1,4 +1,5 @@
 --------------------->>> Dicionários <<<---------------------
+
 Para criar um dicionário, utilizamos chaves "{}", veja:
 ```
 d1 = {}
