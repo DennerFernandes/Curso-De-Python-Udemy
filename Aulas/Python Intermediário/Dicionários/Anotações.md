@@ -45,3 +45,5 @@ Retorna:
 ```
 Tupla
 ```
+Se você tentar printar uma chave que não exista, receberá a seguinte excessão:
+
